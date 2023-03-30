@@ -11,6 +11,7 @@ html{
 }
 body{
     background-color: #fbf8f3;
+    width: auto;
 }
 a{
     text-decoration: none;
@@ -22,6 +23,15 @@ ul{
 .flex{
     display: flex;
     align-items: center;
+}
+.container{
+    width: 80rem;
+    /* background-color: #4d13d1; */
+    margin: 0 auto;
+ 
+}
+.mb{
+    margin-bottom: 1rem;
 }
  /* CSS Variables */
  :root{
@@ -373,3 +383,310 @@ ul{
           }
       
      }
+
+   /******************************************
+                feature Section
+     *******************************************/
+     #features{
+        background-color: #ffffff;
+    padding-top: 4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+     }
+
+     /* Feature section : feature heading */
+     .feature-heading>h3{
+        color: var(--primary-color);
+        margin-bottom: .5rem;
+     }
+
+     .feature-heading>h2{
+        margin-bottom: 1rem;
+     }
+
+      /* Feature section : card area */
+      .card-area{
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      /* Feature section : card area :card */
+      .card-area>.card{
+        width: 25rem;
+      }
+      .card-area>.card>img{
+        margin-bottom: .5rem;
+        width: 2rem;
+      }
+      .card-area>.card>h3{
+        margin-bottom: .5rem;
+      }
+
+       /* Feature section : Trial */
+       .trial{
+        background-color: var(--primary-color);
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-radius: .5rem;
+       }
+
+        /* Feature section : Trial : text */
+        .trial>.text{
+            width: 35rem;
+            margin-top: 12%;
+            margin-left: 4rem;
+            margin-bottom: 10rem;
+        }
+        .trial>.text>h1{
+            color: #ffffff;
+            font-size: 2rem;
+            margin-bottom: .5rem;
+        }
+        .trial>.text>p{
+            color:aliceblue;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+        .trial>.text>a{
+            background-color: #ffffff;
+            color: var(--primary-color);
+            font-weight:  bold;
+            padding: .8rem 1.5rem;
+          
+        }
+
+           /* Feature section : Trial : image */
+           .trial>.feature-img>img{
+            width: 38rem;
+            height: 30rem;
+            position: relative;
+            top: 1.5rem;
+            right: 2rem;
+           }
+           
+
+           .portfolio-card{
+            width: 25rem;
+            border: .1rem solid lightgray;
+            padding: 1rem;
+            margin-bottom: 3rem;
+        
+           }
+           .portfolio-card>.port-img{
+            display: flex;
+            gap: 1rem;
+           }
+           .portfolio-card>.port-img>h3{
+            font-size: 1rem;
+            color: var(--primary-color);
+           }
+           .portfolio-card>.port-img>h3>blockquote{
+            font-size: .8rem;
+            color: var(--p-color);
+           }
+           .portfolio-card>p{
+            font-size: 1rem;
+            color: var(--p-color);
+            margin-bottom: 1rem;
+           }
+
+           .portfolio-card>a{
+            color: var(--primary-color);
+            font-weight: 700;
+            border: .1rem solid black;
+            padding: .4rem 7rem;
+            margin-top: 1rem;
+           }
+
+           /******************************************
+                Media Query for Feature Section
+     *******************************************/
+
+     /* max width 375px : Mobile */
+     @media only screen and (max-width: 428px){
+     .feature-heading{
+        margin-top: -2rem;
+        width: 15rem;
+        margin-left: 2rem;
+       }
+
+       .card-area{
+        margin-top: 0;
+       gap: 2rem;
+        padding: 2rem;
+        width: 24rem;
+        text-align: justify;
+        
+       }
+       .trial{
+        width: 20rem;
+        margin-left: 2rem;
+        margin-top: -1rem;
+       }
+
+       .trial>.text>h1{
+        font-size: 1.5rem;
+       }
+       .trial>.text>p{
+        font-size: 1rem;
+       }
+
+       .trial>.feature-img>img {
+         width: 16rem;
+         top: -5rem;
+         left: 2rem;
+       }
+
+       .portfolio-card>a{
+        margin-left: .4rem;
+        text-align: center;
+        padding: .3rem 5rem;
+       }
+
+     }
+
+     
+     /* max width 375px : Tablet */
+     @media only screen and (min-width:430px) and (max-width: 840px){
+        .feature-heading{
+           margin-top: -1rem;
+           width: 30rem;
+           margin-left: 4rem;
+          }
+   
+          .card-area{
+           margin-top: 0;
+          gap: 2rem;
+           margin-left: 4rem;
+           width: 30rem;
+           text-align: justify;
+           
+          }
+          .trial{
+           width: 40rem;
+           margin-left: 2rem;
+           margin-top: 1rem;
+           margin-bottom: 2rem;
+          }
+   
+          .trial>.text>h1{
+           font-size: 2rem;
+          }
+          .trial>.text>p{
+           font-size: 1.25rem;
+          }
+   
+          .trial>.feature-img>img {
+            width: 30rem;
+            top: -5rem;
+            left: 5rem;
+          }
+
+          .portfolio-card{
+        padding: 1rem;
+   
+              }
+
+    
+          .portfolio-card>p{
+         font-size: 1.25rem;
+           }
+   
+          .portfolio-card>a{
+           margin-left: 3rem;
+           text-align: center;
+           padding: .3rem 5rem;
+          }
+
+          .portfolio-card>.port-img>h3{
+            font-size: 1.5rem;
+            color: var(--primary-color);
+           }
+
+           .portfolio-card>.port-img>h3>blockquote{
+            font-size: 1rem;
+       
+           }
+   
+        }
+
+
+        footer{
+            display: flex;
+            justify-content: space-between;
+            padding: 3rem 0;
+            flex-wrap: wrap;
+           
+          
+        }
+        footer>h3{
+            margin-bottom: 2rem;
+        }
+
+        .fiber{
+            width: 35rem;
+        }
+        .links{
+            display: flex;
+            width: 40rem;
+            gap: 4rem;
+        }
+        .links>ul>li>a{
+           color: var(--p-color);
+           display: flex;
+           gap: 2rem;
+           height: 2rem;
+        }
+       
+          /******************************************
+                Media Query for Footer Section
+     *******************************************/
+
+        @media only screen and (max-width: 428px){
+            footer{
+flex-wrap: wrap;
+flex-direction: column;
+gap: 2rem;
+
+
+            }
+            .fiber{
+                margin-left: 3rem;
+                width: 18rem;
+            }
+
+           footer>.links{
+                flex-direction: column;
+                gap: 1rem;
+                margin-left: 3rem;
+            }
+        }
+              /* max width 375px : Tablet */
+     @media only screen and (min-width:430px) and (max-width: 840px){
+        footer{
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 2rem;
+            
+            
+                        }
+                        .fiber{
+                            margin-left: 3rem;
+                            width: 30rem;
+                        }
+            
+                       footer>.links{
+                            flex-direction: column;
+                            gap: 1rem;
+                            margin-left: 3rem;
+                        }
+                    }
